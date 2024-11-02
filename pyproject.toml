@@ -1,7 +1,7 @@
 [project]
-name = "arx"
+name = "arxette"
 version = "0.1.0"
-description = "Add your description here"
+description = "arx model fit with ols and nll"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
