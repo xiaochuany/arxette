@@ -1,10 +1,11 @@
 [project]
 name = "arxette"
-version = "0.1.1"
-description = "arx model fit with ols and nll"
+version = "0.2.0"
+description = "autoregressive fit"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
+    "jax>=0.4.35",
     "numpy>=2.1.2",
     "scipy>=1.14.1",
 ]

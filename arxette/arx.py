@@ -1,3 +1,7 @@
+"""implements ARX model with Gaussian noise"""
+
+__all__ = ['ARX']
+
 import numpy as np 
 from scipy.optimize import minimize 
 
@@ -44,4 +48,11 @@ class ARX:
         
     def nll(self,params):
         return _nllgauss(self._y,self._x,params)
-    
+
+    def forecast(self, x):
+        m,d = x.shape
+        w= self.params[:d]
+        b,v,al = self.params[d:]
+        fcs = np.zeros(m+1)
+        y_last = self._y[:-1]
+        

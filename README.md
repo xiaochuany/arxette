@@ -12,7 +12,7 @@ $ pip install arxette
 
 ```python
 import numpy as np
-from arx import ARX
+from arxette import ARX, GARCH
 ```
 
 ```python
