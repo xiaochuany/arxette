@@ -5,7 +5,7 @@ autoregressive model with exogeneous variables
 ## install
 
 ```sh
-$ pip install arxette
+$ pip install git+https://github.com/xiaochuany/archette.git
 ```
 
 ## how to use
